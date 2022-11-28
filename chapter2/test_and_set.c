@@ -9,7 +9,7 @@ bool test_and_set(volatile bool *p) {
 // 	endbr64
 // 	movl	$1, %eax
 // 	xchgb	(%rdi), %al
-// 	testb	%al, %al
-// 	setne	%al
+// 	testb	%al, %al 
+// 	setne	%al // setne D	setnz	D <- ~ZF	Not equal / not zero
 // 	ret
 // 	.cfi_endproc
